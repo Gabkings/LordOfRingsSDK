@@ -1,0 +1,42 @@
+{
+  "name": "@gitonga/sdk_test",
+  "version": "1.0.4",
+  "description": "Please modify this readme file to specify how to install, use and test the SDK.",
+  "main": "dist/index.js",
+  "module": "dist/index.m.js",
+  "unpkg": "dist/index.umd.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    "require": "./dist/index.js",
+    "default": "./dist/index.modern.js"
+  },
+  "scripts": {
+    "build": "del -f dist && microbundle --tsconfig tsconfig.json --no-sourcemap",
+    "dev": "microbundle --watch --tsconfig tsconfig.json --no-sourcemap"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hatchways-community/fb5102b908ba428f9ee11b83ae923a43.git"
+  },
+  "keywords": [],
+  "author": "Gabriel Gitonga",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hatchways-community/fb5102b908ba428f9ee11b83ae923a43/issues"
+  },
+  "homepage": "https://github.com/hatchways-community/fb5102b908ba428f9ee11b83ae923a43#readme",
+  "dependencies": {
+    "isomorphic-unfetch": "^4.0.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.2",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^20.3.1",
+    "jest": "^29.5.0",
+    "microbundle": "^0.15.1",
+    "ts-jest": "^29.1.0"
+  },
+  "files": [
+    "dist"
+  ]
+}
